@@ -50,13 +50,13 @@ Enjoy!
 !!! info "Announcements for Week 6 :loudspeaker:"
 
     Please note the deadline and release date of labs:
-
+    
     - AttackLab is due this Sunday (2025-03-30 23:59). Don't forget to submit. :warning:
-
+    
     - CacheLab is planned to released this week. Enjoy! :smile:
-
+    
     **DON'T CHEAT**. Big Brother is watching you!
-
+    
     ~ XJTU-ICS Course Staff
 
 <!-- !!! info "Announcements for Week 5 :loudspeaker:" -->
@@ -116,7 +116,7 @@ Enjoy!
 |   5   | 2025-03-20  | The Memory Hierarchy                      |       Danfeng Shan      | 6.1-6.3 | |
 |   6   | 2025-03-25  | Cache Memories                            |       Danfeng Shan       | 6.4-6.7 | |
 |   6   | 2025-03-27  | Cache Memories                            |       Danfeng Shan       | 6.4-6.7 | attacklab due, cachelab out |
-|   7   | 2025-04-01  | TBA |  Hao Li | | |
+|   7   | 2025-04-01  | Code Optimization |  Hao Li | 5.1-5.6 | |
 |   7   | 2025-04-03  | TBA |  Hao Li | | |
 |   8   | 2025-04-08  | TBA |  Hao Li | | |
 |   8   | 2025-04-10  | TBA |  Hao Li | | cachelab due |
