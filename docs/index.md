@@ -117,7 +117,7 @@ Enjoy!
 |   6   | 2025-03-25  | Cache Memories                            |       Danfeng Shan       | 6.4-6.7 | |
 |   6   | 2025-03-27  | Cache Memories                            |       Danfeng Shan       | 6.4-6.7 | attacklab due, cachelab out |
 |   7   | 2025-04-01  | Code Optimization |  Hao Li | 5.1-5.6 | |
-|   7   | 2025-04-03  | TBA |  Hao Li | | |
+|   7   | 2025-04-03  | Code Optimization |  Hao Li | 5.7-5.11 | |
 |   8   | 2025-04-08  | TBA |  Hao Li | | |
 |   8   | 2025-04-10  | TBA |  Hao Li | | cachelab due |
 |   9   | 2025-04-15  | TBA |  Hao Li | | |

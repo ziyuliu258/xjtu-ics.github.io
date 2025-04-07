@@ -14,8 +14,8 @@ Lab,5,2025-03-23T23:59:58,2025-03-23T23:59:59,No Lecture,,,,,[bomblab](labs/lab2
 Lecture,6,2025-03-25T19:10:00,2025-03-25T21:00:00,Cache Memories,Danfeng Shan,assets/slides/09-cache-memories.pdf,主B-204,6.4-6.7,
 Lecture,6,2025-03-27T19:10:00,2025-03-27T21:00:00,Cache Memories,Danfeng Shan,assets/slides/09-cache-memories.pdf,主B-204,6.4-6.7,[cachelab](labs/lab4.md) out
 Lab,6,2025-03-30T23:59:58,2025-03-30T23:59:59,No Lecture,,,,,[attacklab](labs/lab3.md) due
-Lecture,7,2025-04-01T19:10:00,2025-04-01T21:00:00,Machine-Independent Optimization,Hao Li,assets/slides/10-optimization-machine-indep.pdf,主B-204,5.1-5.6,
-Lecture,7,2025-04-03T19:10:00,2025-04-03T21:00:00,,Hao Li,,主B-204,,[optimlab](labs/lab5.md) out
+Lecture,7,2025-04-01T19:10:00,2025-04-01T21:00:00,Machine independent Optimization,Hao Li,assets/slides/10-optimization-machine-indep.pdf,主B-204,5.1-5.6,
+Lecture,7,2025-04-03T19:10:00,2025-04-03T21:00:00,Machine dependent Optimization,Hao Li,assets/slides/11-optimization-machine-dep.pdf,主B-204,5.7-5.11,[optimlab](labs/lab5.md) out
 Lecture,8,2025-04-08T19:10:00,2025-04-08T21:00:00,,Hao Li,,主B-204,,
 Lecture,8,2025-04-10T19:10:00,2025-04-10T21:00:00,,Hao Li,,主B-204,,
 Lab,8,2025-04-13T23:59:58,2025-04-13T23:59:59,No Lecture,,,,,[cachelab](labs/lab4.md) due
