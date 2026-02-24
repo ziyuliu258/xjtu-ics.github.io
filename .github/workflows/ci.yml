@@ -7,6 +7,8 @@ on:
       - main
 permissions:
   contents: write
+env:
+  DOC_VERSION: ${{ vars.DOC_VERSION }}
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -29,4 +31,4 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material mkdocs-open-in-new-tab mkdocs-macros-plugin pandas tabulate mike
-      - run: mike deploy sp-2026 --push
+      - run: mike deploy $DOC_VERSION --push
