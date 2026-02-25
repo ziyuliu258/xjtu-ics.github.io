@@ -87,5 +87,7 @@ Lecture,2,2025-02-25T19:10:00,2025-02-25T21:00:00,Machine Prog: Basics,Danfeng S
 
 ## 关于多版本控制
 
-该网页使用[mike](https://github.com/jimporter/mike)进行版本控制，目前的工作流为：.github/workflow/ci.yml中配置了命令`mike deploy $DOC_VERSION latest --push`，其中`$DOC_VERSION`在xjtu-ics.github.io的repo settings中配置(variables)[https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables]，保证只有对仓库具有write权限的同学可以修改版本。
+该网页使用[mike](https://github.com/jimporter/mike)进行版本控制。
+
+目前的工作流为：.github/workflow/ci.yml中配置了命令`mike deploy $DOC_VERSION latest --push`。其中`$DOC_VERSION`自动读取在xjtu-ics.github.io的repo settings中配置的[Repository variables](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables)，保证只有对仓库具有write权限的同学可以修改版本。
 
