@@ -104,9 +104,9 @@ Enjoy!
 ## Getting Help
 
 - [Piazza](https://piazza.com/stu.xjtu.edu.cn/spring2026/xjtuics)
-- QQ group: 1030663999
+- QQ group: 1076865018
 - Office Hours
-    - Danfeng Shan: 21:30-22:30, Every Tuesday and Thursday
+    - Danfeng Shan: 16:00-18:00, Every Thursday
     - Hao Li: TBD
 
 ## Schedule
