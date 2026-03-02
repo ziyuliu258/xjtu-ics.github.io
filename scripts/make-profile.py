@@ -20,27 +20,50 @@ def unzip_files(source_folder):
     if not os.path.exists(source_folder):
         os.makedirs(source_folder)
 
-    # 遍历 source_folder 下的所有文件和子文件夹
-    for root, dirs, files in os.walk(source_folder):
-        for file in files:
-            if file.endswith('.zip'):
-                zip_file_path = os.path.join(root, file)
-                zip_file_name = os.path.splitext(os.path.basename(zip_file_path))[0]  # 获取 ZIP 文件名（不包含扩展名）
+    for file in os.listdir(source_folder):
+        if not file.endswith('.zip'):
+            continue
 
-                with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
-                    # 解压到指定目录
-                    zip_ref.extractall(source_folder)
+        zip_file_path = os.path.join(source_folder, file)
+        zip_file_name = os.path.splitext(os.path.basename(zip_file_path))[0]  # 获取 ZIP 文件名（不包含扩展名）
+        target_folder = os.path.join(source_folder, zip_file_name)
 
-                    # 遍历解压后的文件
-                    for zip_info in zip_ref.infolist():
-                        original_file_name = zip_info.filename
-                        original_file_ext = os.path.splitext(original_file_name)[1]
-                        new_file_name = f"{zip_file_name}{original_file_ext}"  # 新文件名与 ZIP 文件同名
-                        new_file_path = os.path.join(source_folder, new_file_name)
+        with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
+            zip_ref.extractall(source_folder)
 
-                        # 重命名文件
-                        original_file_path = os.path.join(source_folder, original_file_name)
-                        os.rename(original_file_path, new_file_path)
+        if not os.path.isdir(target_folder):
+            raise ValueError(
+                f"{file} 格式错误：压缩包中必须包含同名目录 {zip_file_name}/"
+            )
+
+        supported_extensions = {'.jpg', '.jpeg', '.png', '.gif'}
+
+        entries = [
+            entry for entry in os.listdir(target_folder)
+            if os.path.isfile(os.path.join(target_folder, entry))
+        ]
+        json_files = [
+            os.path.join(target_folder, entry)
+            for entry in entries
+            if os.path.splitext(entry)[1].lower() == '.json'
+        ]
+        image_files = [
+            os.path.join(target_folder, entry)
+            for entry in entries
+            if os.path.splitext(entry)[1].lower() in supported_extensions
+        ]
+
+        if len(json_files) != 1 or len(image_files) != 1:
+            raise ValueError(
+                f"{file} 格式错误：{zip_file_name}/ 根目录下必须且只能包含一个 .json 和一个图片文件（.jpg/.jpeg/.png/.gif）"
+            )
+
+        target_json = os.path.join(target_folder, f"{zip_file_name}.json")
+        image_ext = os.path.splitext(image_files[0])[1].lower()
+        target_image = os.path.join(target_folder, f"{zip_file_name}{image_ext}")
+
+        os.replace(json_files[0], target_json)
+        os.replace(image_files[0], target_image)
                         
 def mv_picture(source_folder):
     supported_extensions = {'.jpg', '.jpeg', '.png', '.gif'}
